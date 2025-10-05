@@ -37,6 +37,7 @@ const useNftHistory = () => {
         const toBlock = Math.min(fromBlock + blockRange - 1, latestBlock);
         console.log(`Scan from block ${fromBlock} to ${toBlock}...`);
 
+        // @ts-ignore
         const events = await contract.getPastEvents("Transfer", {
           filter: { tokenId },
           fromBlock: fromBlock,

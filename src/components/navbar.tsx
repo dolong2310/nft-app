@@ -20,7 +20,7 @@ const navbarItems = [
 ];
 
 const Navbar = ({ fixed }: Props) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <nav
@@ -58,7 +58,7 @@ const Navbar = ({ fixed }: Props) => {
         <Button
           variant="default"
           size="icon"
-          onClick={() => setIsSidebarOpen(true)}
+          // onClick={() => setIsSidebarOpen(true)}
         >
           <MenuIcon />
         </Button>
