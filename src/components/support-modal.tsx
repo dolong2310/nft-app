@@ -14,9 +14,19 @@ const SupportModal = ({ isOpen, onOpenChange }: Props) => {
         noCloseButton
       >
         <DialogTitle className="sr-only">Demo NFT App</DialogTitle>
-        <video src="/videos/demo-nft-app.mp4" controls autoPlay muted loop>
-          Trình duyệt của bạn không hỗ trợ video tag.
-        </video>
+        <div className="relative pb-[50%] h-0 overflow-hidden">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            width="1840"
+            height="1152"
+            src="https://www.youtube.com/embed/8o9uftjyhcY"
+            title="Demo NFT App - Deploy contract with Remix IDE"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
       </DialogContent>
     </Dialog>
   );
